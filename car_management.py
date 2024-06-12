@@ -5,6 +5,11 @@ class CarManager:
     total_cars = 1
     # maybe a nested list. future addition. going to want this to be a instance attribute so it stores services done to specific car rather than all cars. so i'll need to move this
     service_list = {}
+
+    # car_tracker = 0
+    # for idx in all_cars:
+    #     for key, vals in idx.items():
+    #         car_tracker += 1
     
     def __init__ (self, owner, make, model, year, mileage, services=service_list, id=total_cars):
         self.total_cars 
@@ -129,4 +134,5 @@ def car_application():
 print(car_application())
 print(CarManager.all_cars)
 print(CarManager.total_cars)
+print(CarManager.car_tracker)
 print(CarManager.total_cars)
